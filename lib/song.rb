@@ -35,7 +35,7 @@ class Song
       result[artist] ? result[artist] += 1 : result[artist] = 1
     end
     result
-    end
+  end
 
 end
 
