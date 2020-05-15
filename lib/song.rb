@@ -22,8 +22,8 @@ class Song
   def self.genre_count
     result = Hash.new
 
+    @@genres.each {|genre| result[genre] = 0}
     @@genres.each {|genre| result[genre] += 1}
-    # @@genres.each {|genre| result[genre] = 0}
 
 
   end
