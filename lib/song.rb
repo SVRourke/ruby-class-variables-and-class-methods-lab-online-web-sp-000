@@ -23,4 +23,7 @@ class Song
 end
 
 a = Song.new("blah", "Nirvana", "Grunge")
+a = Song.new("blah", "Nirvana", "rap")
+a = Song.new("blah", "Nirvana", "rock")
+a = Song.new("blah", "Nirvana", "country")
 puts Song.genres
