@@ -21,3 +21,6 @@ class Song
 
 
 end
+
+a = Song.new("blah", "Nirvana", "Grunge")
+puts song.name
