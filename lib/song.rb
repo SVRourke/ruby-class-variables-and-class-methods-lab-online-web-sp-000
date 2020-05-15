@@ -40,7 +40,8 @@ class Song
 end
 
 a = Song.new("blah", "Nirvana", "Grunge")
-a = Song.new("blah", "Nirvana", "rap")
-a = Song.new("blah", "Nirvana", "rock")
-a = Song.new("blah", "Nirvana", "country")
+a = Song.new("blah", "jpegmafia", "rap")
+a = Song.new("blah", "Arctic Monkeys", "rock")
+a = Song.new("blah", "the smiths", "goth")
 puts Song.genre_count
+puts Song.artist_count
