@@ -23,4 +23,4 @@ class Song
 end
 
 a = Song.new("blah", "Nirvana", "Grunge")
-a.name
+puts Song.genres
