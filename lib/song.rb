@@ -25,9 +25,9 @@ class Song
     @@genres.uniq.each do |genre|
       result[genre] = 0
     end
+    @@genres.each {|genre| result[genre] += 1}
     puts result
 
-    @@genres.each {|genre| result[genre] += 1}
 
 
   end
