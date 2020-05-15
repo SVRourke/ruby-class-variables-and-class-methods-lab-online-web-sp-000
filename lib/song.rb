@@ -50,4 +50,4 @@ class Song
 end
 
 a = Song.new("name", "artist", "genre")
-a.name
+puts a.name
