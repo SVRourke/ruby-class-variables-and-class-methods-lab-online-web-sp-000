@@ -42,3 +42,5 @@ class Song
   end
 
 end
+
+a = Song.new("song name", "artist", "genre")
