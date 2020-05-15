@@ -7,6 +7,9 @@ class Song
     @@count += 1
     @@genres << genre
     @@artists << artist
+
+    puts @name
+
   end
 
   attr_accessor :artist, :genre, :name
@@ -50,4 +53,4 @@ class Song
 end
 
 a = Song.new("name", "artist", "genre")
-puts a.name
+# puts a.name
