@@ -22,17 +22,10 @@ class Song
   def self.genre_count
     result = Hash.new
 
-    @@genres.uniq.each do |genre|
-      result[genre] = 0
-    end
+    @@genres.uniq.each {|genre| result[genre] = 0}
     @@genres.each {|genre| result[genre] += 1}
-    puts result
-
-
-
+    result
   end
-
-
 end
 
 a = Song.new("blah", "Nirvana", "Grunge")
