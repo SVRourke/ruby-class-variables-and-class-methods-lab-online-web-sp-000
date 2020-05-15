@@ -19,6 +19,15 @@ class Song
     @@genres.uniq
   end
 
+  def self.genre_count
+    result = Hash.new
+
+    @@genres.each {|genre| result[genre] += 1}
+    # @@genres.each {|genre| result[genre] = 0}
+
+
+  end
+
 
 end
 
@@ -26,4 +35,4 @@ a = Song.new("blah", "Nirvana", "Grunge")
 a = Song.new("blah", "Nirvana", "rap")
 a = Song.new("blah", "Nirvana", "rock")
 a = Song.new("blah", "Nirvana", "country")
-puts Song.genres
+puts Song.genre_count
