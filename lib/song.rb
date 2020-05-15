@@ -8,6 +8,7 @@ class Song
 
   def initialize(name, artist, genre)
     puts name
+
     @name = name,
     @artist = artist,
     @genre = genre
@@ -17,7 +18,7 @@ class Song
   end
 
   def name
-    @name
+    puts @name
   end
 
   def self.count
@@ -51,4 +52,4 @@ class Song
 end
 
 a = Song.new("song name", "artist", "genre")
-puts a.name
+a.name
